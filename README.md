@@ -1,7 +1,7 @@
 Acceptanstester 
 
 1.
-Test: Som användare vill jag kunna välja räknesätt genom att mata in en siffra 
+Test: Som användare vill jag kunna välja räknesätt genom att mata in en siffra                                                                              
 When: Användaren har startat programmet och är på menyn 
 Then: Kan användaren välja räknesätt (genom en att mata in en siffra)
 
