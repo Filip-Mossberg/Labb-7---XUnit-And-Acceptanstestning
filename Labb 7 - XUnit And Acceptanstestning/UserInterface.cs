@@ -15,28 +15,28 @@ namespace Labb_7___XUnit_And_Acceptanstestning
                 switch (UserPick())
                 {
                     case 1:
-                        var ANumbers = UserInput("addera");
+                        var ANumbers = UserInput("sum");
                         decimal AResult = Addition(ANumbers[0], ANumbers[1]);
-                        UserOutPut(ANumbers[0], ANumbers[1], AResult, "adderade");
-                        SaveCalculation(ANumbers[0], ANumbers[1], AResult, "Adderade");
+                        UserOutPut(ANumbers[0], ANumbers[1], AResult, "combined");
+                        SaveCalculation(ANumbers[0], ANumbers[1], AResult, "Combined");
                         break;
                     case 2:
-                        var SNumbers = UserInput("subtrahera");
+                        var SNumbers = UserInput("subtract");
                         decimal SResult = Subtraktion(SNumbers[0], SNumbers[1]);
-                        UserOutPut(SNumbers[0], SNumbers[1], SResult, "subtraherade");
-                        SaveCalculation(SNumbers[0], SNumbers[1], SResult, "Subtraherade");
+                        UserOutPut(SNumbers[0], SNumbers[1], SResult, "subtracted");
+                        SaveCalculation(SNumbers[0], SNumbers[1], SResult, "Subtracted");
                         break;
                     case 3:
-                        var DNumbers = UserInput("dividera");
+                        var DNumbers = UserInput("divide");
                         decimal DResult = Division(DNumbers[0], DNumbers[1]);
-                        UserOutPut(DNumbers[0], DNumbers[1], DResult, "dividerade");
-                        SaveCalculation(DNumbers[0], DNumbers[1], DResult, "Dividerade");
+                        UserOutPut(DNumbers[0], DNumbers[1], DResult, "divided");
+                        SaveCalculation(DNumbers[0], DNumbers[1], DResult, "Divided");
                         break;
                     case 4:
-                        var MNumbers = UserInput("multiplicera");
+                        var MNumbers = UserInput("multiply");
                         decimal MResult = Multiplikation(MNumbers[0], MNumbers[1]);
-                        UserOutPut(MNumbers[0], MNumbers[1], MResult, "multiplicerade");
-                        SaveCalculation(MNumbers[0], MNumbers[1], MResult, "Multiplicerade");
+                        UserOutPut(MNumbers[0], MNumbers[1], MResult, "multiplied");
+                        SaveCalculation(MNumbers[0], MNumbers[1], MResult, "Multiplied");
                         break;
                     case 5:
                         Console.Clear();
@@ -58,7 +58,7 @@ namespace Labb_7___XUnit_And_Acceptanstestning
             int pick = 0;
             do
             {
-                Console.WriteLine("1. Addition\n2. Subtraktion\n3. Division\n4. Multiplikation\n5. GetCalculations");
+                Console.WriteLine("1. Addition\n2. Subtract\n3. Division\n4. Multiplication\n5. GetCalculations");
                 if(int.TryParse(Console.ReadLine(),out pick))
                 {
                     validPick = true;
